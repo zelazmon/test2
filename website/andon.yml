@@ -1,0 +1,14 @@
+general:
+  whitelist: false
+  pipeline_base_name: websiteM
+
+compile:
+  go_cd_agent_props:
+    - java:8
+    - maven
+  sonarqube: true
+  type: parallel
+  commands:
+    - tasks:
+      - cmd: mvn clean -Djava.security.egd=file:/dev/./urandom install
+        build_path: .
