@@ -6,4 +6,5 @@ compile:
   commands:
     - tasks:
       - cmd: docker build -f Dockerfile -t zuul2:$GO_PIPELINE_COUNTER .
+      - cmd: docker run --name zuul2_container -d -p 8180:80 zuul2:$GO_PIPELINE_COUNTER
         build_path: .
