@@ -5,5 +5,5 @@ general:
 compile:
   commands:
     - tasks:
-      - cmd: docker build -f Dockerfile -t websiteMM:$GO_PIPELINE_COUNTER .
+      - cmd: docker build -f Dockerfile -t zuul:$GO_PIPELINE_COUNTER .
         build_path: .
