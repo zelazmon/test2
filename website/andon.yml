@@ -1,9 +1,0 @@
-general:
-  whitelist: true
-  pipeline_base_name: websiteM
-
-compile:
-  commands:
-    - tasks:
-      - cmd: docker build -f Dockerfile -t website:$GO_PIPELINE_COUNTER .
-        build_path: .
