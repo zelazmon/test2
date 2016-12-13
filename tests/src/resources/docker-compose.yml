@@ -1,0 +1,6 @@
+version: '2'
+services:
+  website:
+    image: eekamak/website:latest
+    expose:
+      - "8180"
