@@ -1,7 +1,7 @@
 version: '2'
 services:
   eureka:
-    build: ../../../../website
+    build: ../../../website
     image: mypage
     expose:
       - "8180"
